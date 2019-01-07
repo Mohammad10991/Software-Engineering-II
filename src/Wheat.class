@@ -1,3 +1,4 @@
 protected class Wheat{
-    
+    private int numberOfGrain;
+
 }
