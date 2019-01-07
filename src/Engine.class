@@ -1,0 +1,12 @@
+protected class Engine{
+    private boolean engineOn;
+
+    protected void turnOn(){
+
+    };
+
+    protected void turnOff(){
+
+    };
+
+}

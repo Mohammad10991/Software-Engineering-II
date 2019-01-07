@@ -24,5 +24,9 @@ protected class Cockpit{
     protected void backward(){
 
     };
+
+    protected void stop(){
+
+    };
     
 }
