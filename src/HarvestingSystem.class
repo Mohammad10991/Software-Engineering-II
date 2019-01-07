@@ -1,0 +1,16 @@
+protected class HarvestingSystem{
+    private boolean turnedOn;
+
+    protected void turnOn(){
+
+    };
+
+    protected void turnOff(){
+
+    };
+
+    protected void harvest(){
+
+    };
+    
+}

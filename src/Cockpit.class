@@ -1,0 +1,28 @@
+protected class Cockpit{
+    private boolean keyTurned;
+
+    protected void turnKey(){
+
+    };
+
+    protected void takeKeyOut(){
+
+    };
+
+    protected void turnLeft(){
+
+    };
+
+    protected void turnRight(){
+
+    };
+
+    protected void forward(){
+
+    };
+
+    protected void backward(){
+
+    };
+    
+}

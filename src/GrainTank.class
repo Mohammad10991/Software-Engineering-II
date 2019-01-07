@@ -1,0 +1,13 @@
+protected class GrainTank{
+    private int amountGrain = 0;
+
+    protected void emptyTank(){
+
+    };
+
+    protected void checkFull(){
+        
+    };
+
+
+}
