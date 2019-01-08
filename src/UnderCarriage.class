@@ -1,5 +1,9 @@
+package harvester;
+
 protected class UnderCarriage{
     private boolean moving;
 
-    
+    protected void move(){
+        moving = true;
+    };
 }

@@ -1,16 +1,19 @@
+package harvester;
+
 protected class Cockpit{
+
     private boolean keyTurned;
 
     protected void turnKey(){
-
+        keyTurned = true;
     };
 
     protected void takeKeyOut(){
-
+        keyTurned = false;
     };
 
     protected void turnLeft(){
-
+        move();
     };
 
     protected void turnRight(){
