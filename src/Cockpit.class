@@ -1,6 +1,6 @@
 package harvester;
 
-protected class Cockpit{
+protected class Cockpit implements ICockpit{
 
     private boolean keyTurned;
 

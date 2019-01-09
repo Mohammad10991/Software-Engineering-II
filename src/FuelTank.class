@@ -1,4 +1,4 @@
-protected class FuelTank{
+protected class FuelTank implements IFuelTank{
     private int fuel = 100;
 
     protected void burnFuel(){

@@ -1,4 +1,4 @@
-protected class GrainTank{
+protected class GrainTank implements IGrainTank{
     private int amountGrain = 0;
     private boolean tankFull = false;
 

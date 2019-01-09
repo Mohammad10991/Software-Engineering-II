@@ -1,4 +1,4 @@
-protected class HarvestingSystem{
+protected class HarvestingSystem implements IHarvestingSystem{
     private boolean turnedOn;
 
     protected void turnOn(){

@@ -1,6 +1,6 @@
 package harvester;
 
-protected class UnderCarriage{
+protected class UnderCarriage implements IUnderCarriage{
     private boolean moving;
 
     protected void move(){

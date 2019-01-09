@@ -1,4 +1,4 @@
-protected class Engine{
+protected class Engine implements IEngine{
     private boolean engineOn;
 
     protected void turnOn(){
