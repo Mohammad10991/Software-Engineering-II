@@ -22,14 +22,17 @@ protected class Cockpit implements ICockpit{
 
     protected void forward(){
         System.out.write("drive forward");
+        UnderCarriage.move();
     };
 
     protected void backward(){
         System.out.write("drive backward");
+        UnderCarriage.move();
     };
 
     protected void stop(){
         System.out.write("stop");
+        UnderCarriage.stop();
     };
     
 }

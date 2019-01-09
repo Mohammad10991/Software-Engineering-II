@@ -3,6 +3,7 @@ protected class Engine implements IEngine{
 
     protected void turnOn(){
         engineOn = true;
+        FuelTank.burnFuel();
     };
 
     protected void turnOff(){

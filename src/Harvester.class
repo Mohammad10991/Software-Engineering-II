@@ -1,3 +1,21 @@
+
+
 protected class Harvester{
-    
+    protected void allStart() {
+        Cockpit.turnKey();
+        Engine.turnOn();
+        HarvestingSystem.turnOn();
+    };
+
+    protected void allMove() {
+        Cockpit.forward();
+        HarvestingSystem.harvest();
+    };
+
+    protected void allStop() {
+        Cockpit.stop();
+        Cockpit.takeKeyOut();
+        Engine.turnOff();
+        HarvestingSystem.turnOff();
+    };
 }

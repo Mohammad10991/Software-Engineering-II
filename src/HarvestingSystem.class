@@ -10,7 +10,7 @@ protected class HarvestingSystem implements IHarvestingSystem{
     };
 
     protected void harvest(){
-
+        GrainTank.grainIncrease();
     };
     
 }

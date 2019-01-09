@@ -12,5 +12,9 @@ protected class GrainTank implements IGrainTank{
         }
     };
 
+    protected void grainIncrease(){
+        amountGrain++;
+    };
+
 
 }
