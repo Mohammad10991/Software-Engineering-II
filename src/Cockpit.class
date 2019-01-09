@@ -13,23 +13,23 @@ protected class Cockpit implements ICockpit{
     };
 
     protected void turnLeft(){
-        
+        System.out.write("turned left");
     };
 
     protected void turnRight(){
-    
+        System.out.write("turned right");
     };
 
     protected void forward(){
-
+        System.out.write("drive forward");
     };
 
     protected void backward(){
-
+        System.out.write("drive backward");
     };
 
     protected void stop(){
-
+        System.out.write("stop");
     };
     
 }
