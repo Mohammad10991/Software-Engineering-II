@@ -1,0 +1,4 @@
+interface IUnderCarriage {
+    move();
+    stop();
+}

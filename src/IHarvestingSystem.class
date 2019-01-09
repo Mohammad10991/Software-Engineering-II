@@ -1,0 +1,5 @@
+interface IHarvestingSystem {
+    turnOn();
+    turnOff();
+    harvest();
+}

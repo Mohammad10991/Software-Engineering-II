@@ -1,0 +1,4 @@
+interface IFuelTank {
+    burnFuel();
+    refill();
+}
