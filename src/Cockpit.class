@@ -13,11 +13,11 @@ protected class Cockpit{
     };
 
     protected void turnLeft(){
-        move();
+        
     };
 
     protected void turnRight(){
-
+    
     };
 
     protected void forward(){

@@ -2,10 +2,10 @@ protected class FuelTank{
     private int fuel = 100;
 
     protected void burnFuel(){
-    
+        fuel--;
     };
 
     protected void refill(){
-
+        fuel = 100;
     };
 }

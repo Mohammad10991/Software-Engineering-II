@@ -6,4 +6,8 @@ protected class UnderCarriage{
     protected void move(){
         moving = true;
     };
+
+    protected void stop(){
+        moving = false;
+    }
 }

@@ -2,11 +2,11 @@ protected class Engine{
     private boolean engineOn;
 
     protected void turnOn(){
-
+        engineOn = true;
     };
 
     protected void turnOff(){
-
+        engineOn = false;
     };
 
 }

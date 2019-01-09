@@ -2,11 +2,11 @@ protected class HarvestingSystem{
     private boolean turnedOn;
 
     protected void turnOn(){
-
+        turnedOn = true;
     };
 
     protected void turnOff(){
-
+        turnOff = false;
     };
 
     protected void harvest(){

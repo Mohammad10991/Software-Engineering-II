@@ -1,12 +1,15 @@
 protected class GrainTank{
     private int amountGrain = 0;
+    private boolean tankFull = false;
 
     protected void emptyTank(){
-
+        amountGrain = 0;
     };
 
     protected void checkFull(){
-        
+        if (amountGrain == 100) {
+            tankFull = true;
+        }
     };
 
 
