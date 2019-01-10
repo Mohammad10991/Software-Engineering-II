@@ -6,9 +6,9 @@ public class GrainFeld {
  
  
  public GrainFeld(){
-	 grainFeldArray = new Wheat[posx][posy];
+	 grainFeldArray = new Wheat[posx][posy]; // tow dimm Array for Wheat Plants
 
-	 for (int i = 0 ; i < posx; i++) {
+	 for (int i = 0 ; i < posx; i++) {    
 		 for (int j = 0; j < posy ; j++) {
 			grainFeldArray [j][i] = new Wheat(); 
 		 }
@@ -20,7 +20,7 @@ public class GrainFeld {
 		 for(int j = 0 ; j < posy ; j++) {
 			 Wheat index = grainFeldArray[j][i];
 			 System.out.print(" [pos: ("+ i +" , "+ j +") : ");
-			 System.out.print(index.NumberofGrain(100, 501)+" ] ");
+			 System.out.print(index.getNumberOfGrains()+" ] ");
 		 }
 		 System.out.println("\n");
 	 }

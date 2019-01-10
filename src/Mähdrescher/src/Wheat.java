@@ -1,48 +1,42 @@
-import java.util.*;
-public class Wheat implements Comparable<Wheat> {
-  private int NumberOfGrain;
-  private XYPosition position;
-  
-public Wheat() {
-	
-}
-public Wheat( int NumberOfGrain , XYPosition position){
-	this.NumberOfGrain = NumberOfGrain;
-	this.position = position ;
-}
 
-public int   NumberofGrain(int LowerLimit , int UpperLimit ) {
-	int randomNumber = (int)(Math.random()* UpperLimit);
-	//Random random = new Random();
-//	int randomNumber = random.nextInt(UpperLimit);
- while(randomNumber < LowerLimit) {
-	 randomNumber = (int)(Math.random()* UpperLimit);
-			 //random.nextInt(UpperLimit);
- }
- return randomNumber;
-}
-public  XYPosition getPosition() {
-	return position;
-}
-public void setPosition(XYPosition position) {
-	this.position=position;
-}
-@Override
-public int compareTo(Wheat o) {
-	int gDifference = -NumberOfGrain + o.NumberofGrain(100,501);
-	if(gDifference != 0) {
-		return gDifference;
-	}
-	
-	int posxDifference = position.getPosx() - o.getPosition().getPosx();
-	if(posxDifference != 0) {
-		return posxDifference;
-	}
-	int posyDifference = position.getPosy() - o.getPosition().getPosy();
-	if (posyDifference != 0) {
-		return posyDifference;
-	}
-	
-	return 0;
-}
+import java.util.Random;
+
+public class Wheat implements Comparable<Wheat> {
+    private int numberOfGrain;
+    private XYPosition position;
+
+    public Wheat() {
+        Random random = new Random();
+        this.numberOfGrain = 100 + random.nextInt(401);
+    }
+
+    public int getNumberOfGrains() {
+        return numberOfGrain;
+    }
+
+    public XYPosition getPosition() {
+        return position;
+    }
+
+    public void setPosition(XYPosition position) {
+        this.position = position;
+    }
+
+    @Override
+    public int compareTo(Wheat o) {     // Compare to method used for the sorting of the TreeSet 
+        int gDifference = -numberOfGrain + o.getNumberOfGrains();
+        if(gDifference != 0){
+            return gDifference;
+        }
+        //compare name
+        int xDifference = position.getPosx() - o.getPosition().getPosx();
+        if(xDifference != 0){
+            return xDifference;
+        }
+        int yDifference = position.getPosy() - o.getPosition().getPosy();
+        if(yDifference != 0){
+            return yDifference;
+        }
+        return 0;
+    }
 }

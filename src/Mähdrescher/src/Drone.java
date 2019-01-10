@@ -1,7 +1,7 @@
 import java.util.*;
 public class Drone {
 
-	public HashSet<Wheat> scanField(GrainFeld f){
+	public HashSet<Wheat> scanField(GrainFeld f){ // Position to all Wheat Plants
 		HashSet<Wheat> hashSet = new HashSet<>();
 		for ( int i = 0; i < f.getposx();i++) {
 			for(int j = 0; j < f.getposy();j++) {

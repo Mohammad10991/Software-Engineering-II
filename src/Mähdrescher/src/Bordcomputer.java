@@ -13,20 +13,20 @@ public class Bordcomputer implements IBordComputer {
  }
  @Override
  
-public void droneScan(){
+public void droneScan(){ // Sorting the Wheat 
 	 Drone drone = new Drone();
 	 sortedField.addAll(drone.scanField(field));
  }
 	
-public void sortedPrint() {
+public void sortedPrint() {  // 
 	int counter = 0;
 	
 	for (Wheat wheat : sortedField) {
-		System.out.println(" { grains : "+wheat.NumberofGrain(100, 501)+" , Position [ x : "+wheat.getPosition().getPosx()+", y : "+wheat.getPosition().getPosy()+"] }");
+		System.out.print(" { grains : "+wheat.getNumberOfGrains()+" , Position [ x : "+wheat.getPosition().getPosx()+", y : "+wheat.getPosition().getPosy()+"] }");
 		counter++;
 		
 	if( counter %100 == 0){
-		System.out.println("\n");
+		System.out.print("\n");
 	}
 	}
 	System.out.println("\n count : "+sortedField.size());
