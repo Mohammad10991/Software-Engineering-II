@@ -2,6 +2,7 @@ import java.util.*;
 import java.awt.*;
 import java.io.*;
 
+//can turn on/off, turn, move and stop
 public class Cockpit {
 
     private static boolean keyTurned;

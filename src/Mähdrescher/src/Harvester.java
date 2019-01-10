@@ -1,6 +1,9 @@
 import java.util.*;
 import java.awt.*;
 
+
+//describes the whole machine
+//starts, moves and stops
 public class Harvester{
     public static void allStart() {
         Cockpit.turnKey();

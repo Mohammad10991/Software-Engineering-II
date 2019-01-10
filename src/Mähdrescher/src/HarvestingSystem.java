@@ -1,6 +1,7 @@
 import java.util.*;
 import java.awt.*;
 
+// can turn on/off and harvest grain
 public class HarvestingSystem{
     private static boolean turnedOn = false;
 

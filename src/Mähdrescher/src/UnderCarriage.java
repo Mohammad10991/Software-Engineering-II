@@ -1,5 +1,5 @@
 
-
+// can move or stop
 public class UnderCarriage {
     private static boolean moving;
 

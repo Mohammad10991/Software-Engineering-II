@@ -1,6 +1,7 @@
 import java.util.*;
 import java.awt.*;
 
+// can remove fuel and refill
 public class FuelTank {
     private static int fuel = 100;
 
