@@ -1,21 +1,23 @@
+import java.util.*;
+import java.awt.*;
 
-
-protected class Harvester{
-    protected void allStart() {
+public class Harvester{
+    public static void allStart() {
         Cockpit.turnKey();
         Engine.turnOn();
         HarvestingSystem.turnOn();
     };
 
-    protected void allMove() {
+    public static void allMove() {
         Cockpit.forward();
         HarvestingSystem.harvest();
     };
 
-    protected void allStop() {
+    public static void allStop() {
         Cockpit.stop();
         Cockpit.takeKeyOut();
         Engine.turnOff();
         HarvestingSystem.turnOff();
+        FuelTank.refill();
     };
 }

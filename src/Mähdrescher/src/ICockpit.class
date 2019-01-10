@@ -1,9 +1,0 @@
-interface ICockpit {
-    turnKey();
-    takeKeyOut();
-    turnLeft();
-    turnRight();
-    forward();
-    backward();
-    stop();
-}

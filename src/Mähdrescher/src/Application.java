@@ -1,5 +1,6 @@
 //import java.util.Random;
 //import java.util.*;
+
 public class Application {
 
 	public static void main(String[] args) {
@@ -15,5 +16,11 @@ public class Application {
   System.out.println("Sortierte Liste im Bordcomputer : ");
   bordcomputer.droneScan();
   bordcomputer.sortedPrint();
+
+
+
+  Harvester.allStart();
+  Harvester.allMove();
+  Harvester.allStop();
 	}
 }
